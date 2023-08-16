@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const no = parseInt(prompt("Enter Number"));
+        let temp = no;
+        let sum = 0;
+
+        while(temp > 0)
+        {
+            let rem = Math.floor(temp%10) ;
+            sum += rem*rem*rem;
+            temp = temp/10;
+        }
+        if(sum == no)
+        {
+            document.write(`${no} is an Armstrong Number`);
+        }
+        else
+        {
+            document.write(`${no} is Not an Armstrong Number`);
+        }
+    </script>
+</body>
+</html>
